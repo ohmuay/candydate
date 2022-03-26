@@ -1,7 +1,6 @@
 import React,{useState} from "react";
 import Container from "../../components/Container/Container";
-import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth'
-import {app} from '../../firebase-config'
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
 
 function LoginPage() {
 
@@ -23,6 +22,7 @@ function LoginPage() {
     const authentication = getAuth();
     try{
       const response = await signInWithEmailAndPassword(authentication, username, password)
+      console.log(response)
     }catch(err){
       console.log(err);
       setError(err.message)
