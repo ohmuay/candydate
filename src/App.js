@@ -5,6 +5,7 @@ import NavigationBar from "./components/NavigationBar/NavigationBar";
 import HomePage from "./pages/Homepage/HomePage";
 import NotFound from "./pages/NotFound/NotFound";
 import AppWrapper from "./components/AppWrapper/AppWrapper";
+import LoginPage from "./pages/LoginPage/LoginPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <NavigationBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
