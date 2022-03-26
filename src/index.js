@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import "./firebase-config";
 import { AuthProvider } from "./context/AuthContext";
+import "./firebase-config";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <AuthProvider>

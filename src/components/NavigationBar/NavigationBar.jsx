@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import AuthContext from "../../context/AuthContext";
-import Container from "../Container/Container";
 import logo from "../../statics/images/logo.png";
+import Container from "../Container/Container";
 
 function NavigationBar() {
   const { auth } = useContext(AuthContext);

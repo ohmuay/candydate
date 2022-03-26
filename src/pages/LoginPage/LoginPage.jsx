@@ -1,7 +1,7 @@
 import {
   FacebookAuthProvider,
-  GoogleAuthProvider,
   getAuth,
+  GoogleAuthProvider,
   signInWithEmailAndPassword,
   signInWithPopup,
 } from "firebase/auth";
@@ -11,7 +11,6 @@ import {
   FacebookLoginButton,
   GoogleLoginButton,
 } from "react-social-login-buttons";
-import Container from "../../components/Container/Container";
 import { useAuth } from "../../hook/useAuth";
 
 function LoginPage() {
@@ -19,7 +18,7 @@ function LoginPage() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
-  const { auth, setAuth } = useAuth();
+  const { setAuth } = useAuth();
 
   const handleUserNameChange = (e) => {
     setUsername(e.target.value);
