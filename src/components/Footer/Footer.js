@@ -3,7 +3,7 @@ import Container from "../Container/Container";
 
 function Footer() {
   return (
-    <footer className="bg-gray-500 mt-auto p-6 xl:px-0">
+    <footer className="p-6 mt-auto bg-gray-500 xl:px-0">
       <Container>Footer</Container>
     </footer>
   );

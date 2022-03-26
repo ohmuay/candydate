@@ -10,7 +10,7 @@ function NavigationBar() {
 
   return (
     <nav className="p-6 xl:px-0">
-      <Container className="flex justify-between items-center">
+      <Container className="flex items-center justify-between">
         <Link to="/">
           <img src={logo} alt="company-logo" className="w-24" />
         </Link>
@@ -20,19 +20,19 @@ function NavigationBar() {
               <img
                 src={auth.user.photoURL}
                 alt="avatar"
-                className="h-12 rounded-full self-center"
+                className="self-center h-12 rounded-full"
               />
               <span>{auth.user.displayName}</span>
             </div>
           ) : (
-            <div className="flex gap-2 items-center">
+            <div className="flex items-center gap-2">
               <Link
                 to="/login"
                 className="text-purple-700 font-bold pb-0.3 border-b-2 border-purple-700"
               >
                 Sign In
               </Link>
-              <span className="text-purple-700 font-bold">/</span>
+              <span className="font-bold text-purple-700">/</span>
               <Link
                 to="/register"
                 className="text-purple-700 font-bold pb-0.3 border-b-2 border-purple-700"
@@ -42,7 +42,7 @@ function NavigationBar() {
             </div>
           )}
           <Link to="/employer">
-            <span className="grid place-items-center bg-purple-200 p-4 text-purple-700 font-bold rounded-md">
+            <span className="grid p-4 font-bold text-purple-700 bg-purple-200 rounded-md place-items-center">
               Employer Site
             </span>
           </Link>

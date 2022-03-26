@@ -100,9 +100,9 @@ function LoginPage() {
   };
 
   return (
-    <div className="flex-auto bg-gray-200 grid place-items-center">
+    <div className="grid flex-auto bg-gray-200 place-items-center">
       <form
-        className="p-6 bg-purple-200 flex flex-col gap-4 rounded-lg text-purple-700 shadow-xl w-full max-w-lg"
+        className="flex flex-col w-full max-w-lg gap-4 p-6 text-purple-700 bg-purple-200 rounded-lg shadow-xl"
         onSubmit={handleSubmit}
       >
         <h1 className="text-4xl font-bold">Sign in</h1>
@@ -113,7 +113,7 @@ function LoginPage() {
             name="username"
             id="username"
             value={username}
-            className="shadow-inner px-3 py-1"
+            className="px-3 py-1 shadow-inner"
             onChange={handleUserNameChange}
           />
         </div>
@@ -124,13 +124,13 @@ function LoginPage() {
             name="password"
             id="password"
             value={password}
-            className="shadow-inner px-3 py-1"
+            className="px-3 py-1 shadow-inner"
             onChange={handlePasswordChange}
           />
         </div>
         <button
           type="submit"
-          className="py-1 rounded-md bg-purple-400 text-purple-100 font-bold shadow-lg shadow-indigo-500/40"
+          className="py-1 font-bold text-purple-100 bg-purple-400 rounded-md shadow-lg shadow-indigo-500/40"
         >
           Login
         </button>

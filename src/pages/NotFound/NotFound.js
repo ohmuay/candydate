@@ -2,7 +2,7 @@ import React from "react";
 
 function NotFound() {
   return (
-    <div className="bg-gray-200 flex-auto grid place-items-center text-4xl">
+    <div className="grid flex-auto text-4xl bg-gray-200 place-items-center">
       404 NotFound
     </div>
   );
