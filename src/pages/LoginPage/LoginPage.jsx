@@ -100,7 +100,7 @@ function LoginPage() {
   };
 
   return (
-    <div className="grid flex-auto bg-gray-200 place-items-center">
+    <div className="grid flex-auto bg-gray-100 place-items-center">
       <form
         className="flex flex-col w-full max-w-lg gap-4 p-6 text-purple-700 bg-purple-200 rounded-lg shadow-xl"
         onSubmit={handleSubmit}
@@ -130,7 +130,7 @@ function LoginPage() {
         </div>
         <button
           type="submit"
-          className="py-1 font-bold text-purple-100 bg-purple-400 rounded-md shadow-lg shadow-indigo-500/40"
+          className="py-1 font-bold text-purple-200 bg-purple-700 rounded-md shadow-lg shadow-indigo-500/40"
         >
           Login
         </button>

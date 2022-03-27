@@ -1,11 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import AppWrapper from "./components/AppWrapper/AppWrapper";
 import Footer from "./components/Footer/Footer";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import HomePage from "./pages/Homepage/HomePage";
-import NotFound from "./pages/NotFound/NotFound";
-import AppWrapper from "./components/AppWrapper/AppWrapper";
 import LoginPage from "./pages/LoginPage/LoginPage";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
   return (

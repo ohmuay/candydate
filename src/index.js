@@ -6,6 +6,10 @@ import "./firebase-config";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
+if (process.env.NODE_ENV === "development") {
+  document.querySelector("body").classList.toggle("debug-screens");
+}
+
 ReactDOM.render(
   <AuthProvider>
     <App />
