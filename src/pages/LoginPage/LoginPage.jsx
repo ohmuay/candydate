@@ -65,7 +65,11 @@ function LoginPage() {
         // This gives you a Facebook Access Token. You can use it to access the Facebook API.
         const credential = FacebookAuthProvider.credentialFromResult(result);
         const accessToken = credential.accessToken;
-        setAuth({ user, accessToken });
+
+        const photoURL =
+          user.photoURL + "?height=500&access_token=" + accessToken;
+
+        setAuth({ user: { ...user, photoURL }, accessToken });
         navigate("/");
 
         // ...
